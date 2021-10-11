@@ -43,4 +43,8 @@ public class ProductController {
     public Integer hey(@PathVariable int n1,@PathVariable int n2){
         return n1+n2;
     }
+    @GetMapping("/hello/{n1}/{n2}") @ResponseBody
+    public Integer hy(@PathVariable int n1,@PathVariable int n2){
+        return n1-n2;
+    }
 }
